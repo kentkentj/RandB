@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CyclingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cycling">
+
+        <in.unicodelabs.kdgaugeview.KdGaugeView
+            android:id="@+id/speedMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:animationTime="2000"
+            app:maxSpeed="100"
+            app:minSpeed="0"
+            app:speed="100"
+            app:speed_limit="90"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Textview"/>
+
+    <EditText
+        android:id="@+id/setLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Lat"/>
+    <EditText
+        android:id="@+id/setLong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="Long"/>
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:columnCount="1">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <!--Other Menus-->
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:civ_border_width="0dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:cardBackgroundColor="#E6FAFAFA">
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/distance"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:text="Distance"/>
+                    <TextView
+                        android:id="@+id/setDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Distance"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:civ_border_width="0dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:cardBackgroundColor="#E6FAFAFA">
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/clock"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:text="Duration"/>
+                    <Chronometer
+                        android:id="@+id/cyclingChronometer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#95000000"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startCycling"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cycling"
+            android:textColor="@color/white"
+            android:text="Start Cycling"/>
+
+        <Button
+            android:id="@+id/stopCycling"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/cycling"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"/>
+    </LinearLayout>
+</LinearLayout>

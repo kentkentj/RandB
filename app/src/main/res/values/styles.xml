@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="input">
+        <item name="android:textColor">#E6FFFFFF</item>
+        <item name="android:textColorHint">#E6FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding_medium"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!--<Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="#fff"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="SIGN IN WITH GOOGLE"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_v2"/>
+
+
+    <EditText
+        android:id="@+id/setUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input"
+        android:hint="Username"/>
+    <EditText
+        android:id="@+id/getUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <!--Login Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:background="@color/white"
+            android:text="Sign in"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="or"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_sm"
+            android:padding="10dp"
+            android:gravity="center_horizontal" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_sm"
+            android:textColor="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="Create Account"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "759124555153",
+    "firebase_url": "https://fitplusplus-63271-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitplusplus-63271",
+    "storage_bucket": "fitplusplus-63271.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759124555153:android:69d0744048adcf88e05630",
+        "android_client_info": {
+          "package_name": "com.example.fitplusplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759124555153-dag54hv7tej8ht1fsqo5ckn053q76ch1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitplusplus",
+            "certificate_hash": "bc56752995a84c146d03a4adf95da5901c680caf"
+          }
+        },
+        {
+          "client_id": "759124555153-ielihtj28qfd99l7sartd3rv4iccr2oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaqRFgntydxrLM8J3uohSOKG9UVPIutzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759124555153-ielihtj28qfd99l7sartd3rv4iccr2oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

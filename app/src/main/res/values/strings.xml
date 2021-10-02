@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">R and B</string>
+    <string name="sign_in_with_google">Sign in With Google</string>
+    <string name="example">Example</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_out">Sign out</string>
+
+    <string-array name="gender">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+
+    <string name="selected_item">Selected item:</string>
+
+    <!--cycling-->
+    <string name="default_speed_text">0.0</string>
+    <string name="blaaack">BLAAAACK</string>
+    <string name="whiiite">WHIIIITE</string>
+    <string name="toolbar_title">Super Simple Speedo</string>
+    <string name="kmh">(KM/H)</string>
+    <string name="mph">(MPH)</string>
+    <string name="mps">(M/S)</string>
+    <string name="speed_text_format">%.2f</string>
+</resources>

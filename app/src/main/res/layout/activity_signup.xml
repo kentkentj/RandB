@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="@dimen/layout_padding_medium"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_v2"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/setUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:hint="Username"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small">
+        <EditText
+            android:id="@+id/setEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:hint="Email"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small">
+        <EditText
+            android:id="@+id/setFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:hint="First Name"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small">
+        <EditText
+            android:id="@+id/setLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:hint="Last Name"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small">
+
+        <EditText
+            android:id="@+id/setUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_small">
+
+        <EditText
+            android:id="@+id/repeatUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            style="@style/input"
+            android:hint="Repeat Password"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:background="@color/white"
+            android:text="Sign up"/>
+    </LinearLayout>
+</LinearLayout>
